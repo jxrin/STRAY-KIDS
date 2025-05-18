@@ -3,39 +3,123 @@ A fan made music website for Stray Kids
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stray Kids Fan Site</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stray Kids</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: white;
+    }
+    header {
+      background-color: #111;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #e60026;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #1a1a1a;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e60026;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #222;
+    }
+    section h2 {
+      color: #e60026;
+    }
+    .content-box {
+      margin-top: 20px;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .upload-note {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 10px;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>STRAY KIDS WORLD</h1>
-    <p>8 members. 1 family. 0 skips.</p>
+    <h1>Stray Kids</h1>
+    <p>A fan made music website for Stray Kids</p>
   </header>
+
   <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Discography</a></li>
-      <li><a href="#">Members</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+    <a href="#music">Music</a>
+    <a href="#fan-edits">Fan Edits</a>
+    <a href="#photos">Photos</a>
+    <a href="#memes">Memes</a>
   </nav>
-  <main>
-    <section>
-      <h2>Now Playing</h2>
-      <iframe width="360" height="215" src="https://www.youtube.com/embed/JsOOis4bBFg" 
-        title="Stray Kids Music Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </section>
-    <section>
-      <h2>Our Boys</h2>
-      <img src="img/straykids-ot8.jpg.jpg" alt="Stray Kids OT8" width="300">
-      <p>Stray Kids are not just a group, they’re a revolution. From “God’s Menu” to “S-Class,” they’ve redefined K-Pop with raw energy, deep lyrics, and insane talent. Get to know them, stan them, love them.</p>
-    </section>
-  </main>
+
+  <section id="music">
+    <h2>Music</h2>
+    <div class="content-box">
+      <!-- Embed music players or links here -->
+      <p>Stream your favorite SKZ songs here!</p>
+      <p class="upload-note">Want to upload music? Please request permission.</p>
+    </div>
+  </section>
+
+  <section id="fan-edits">
+    <h2>Fan Edits</h2>
+    <div class="content-box">
+      <!-- Embed fan edits (videos) -->
+      <p>Explore amazing fan-made edits!</p>
+      <p class="upload-note">To upload your edit, please contact the admin for access.</p>
+    </div>
+  </section>
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <div class="content-box">
+      <!-- Add fan-uploaded or SKZ photos -->
+      <p>Browse our fan gallery.</p>
+      <p class="upload-note">Uploading feature is locked. Permission needed.</p>
+    </div>
+  </section>
+
+  <section id="memes">
+    <h2>Memes</h2>
+    <div class="content-box">
+      <!-- Add funny memes here -->
+      <p>Laugh with our fan-made SKZ memes!</p>
+      <p class="upload-note">Submit memes after permission approval.</p>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Stray Kids Fan Page. Made by your Jarin.</p>
+    &copy; 2025 Stray Kids Fan Project. All content belongs to respective owners.
   </footer>
 </body>
 </html>
