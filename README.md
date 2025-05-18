@@ -13,7 +13,7 @@ A fan made music website for Stray Kids
       box-sizing: border-box;
     }
 
-    body {
+  body {
       background-color: #0c0c0c;
       font-family: 'RocknRoll One', sans-serif;
       color: white;
@@ -23,7 +23,7 @@ A fan made music website for Stray Kids
       min-height: 100vh;
     }
 
-    .container {
+   .container {
       display: flex;
       width: 90%;
       max-width: 1200px;
@@ -33,30 +33,30 @@ A fan made music website for Stray Kids
       box-shadow: 0 0 30px rgba(255, 0, 80, 0.2);
     }
 
-    .left {
+  .left {
       flex: 1;
       padding: 40px;
       background: #0d0d0d;
     }
 
-    .left h1 {
+  .left h1 {
       font-size: 3em;
       font-family: 'Orbitron', sans-serif;
       color: #e60026;
     }
 
-    .left h2 {
+  .left h2 {
       margin-top: 30px;
       font-size: 1.3em;
       color: #fff;
     }
 
-    .left ul {
+  .left ul {
       margin-top: 15px;
       list-style: none;
     }
 
-    .left ul li {
+  .left ul li {
       margin-bottom: 10px;
       font-size: 1em;
       color: #aaa;
@@ -64,11 +64,11 @@ A fan made music website for Stray Kids
       transition: 0.2s;
     }
 
-    .left ul li:hover {
+.left ul li:hover {
       color: #fff;
     }
 
-    .right {
+  .right {
       flex: 2;
       position: relative;
       background: linear-gradient(to top, #0c0c0c, #141414);
@@ -78,43 +78,43 @@ A fan made music website for Stray Kids
       justify-content: space-between;
     }
 
-    .image-box {
+  .image-box {
       text-align: center;
     }
 
-    .image-box img {
+  .image-box img {
       max-width: 300px;
       border-radius: 20px;
       filter: drop-shadow(0 0 15px #e60026);
     }
 
-    .player {
+  .player {
       margin-top: 30px;
     }
 
-    .player h3 {
+  .player h3 {
       margin-bottom: 10px;
       font-size: 1.2em;
     }
 
-    .tracklist {
+  .tracklist {
       margin-top: 10px;
       color: #ccc;
       font-size: 0.95em;
     }
 
-    .tracklist li {
+  .tracklist li {
       margin-bottom: 8px;
     }
 
-    .desc {
+.desc {
       margin-top: 30px;
       color: #aaa;
       font-size: 0.95em;
       line-height: 1.5em;
     }
 
-    .play-button {
+   .play-button {
       display: inline-block;
       background-color: #e60026;
       padding: 10px 15px;
@@ -140,12 +140,12 @@ A fan made music website for Stray Kids
       </ul>
     </div>
 
-    <div class="right">
+   <div class="right">
       <div class="image-box">
         <img src="https://i.pinimg.com/736x/52/e8/79/52e879f9d61c3e4c2d3e1858e7c54a2d.jpg" alt="Stray Kids Album Cover">
       </div>
 
-      <div class="player">
+   <div class="player">
         <h3><span class="play-button">▶</span> *Out of Control* — Now Playing</h3>
         <ul class="tracklist">
           <li>Case 143 — 3:12</li>
@@ -155,7 +155,7 @@ A fan made music website for Stray Kids
         </ul>
       </div>
 
-      <div class="desc">
+  <div class="desc">
         This fan-made page celebrates Stray Kids and their musical journey.  
         It is a personal project to archive fan-favorite tracks, edits, memes, and visuals.  
         Want to contribute your own content? Ask the admin for permission!
