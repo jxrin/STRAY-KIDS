@@ -7,13 +7,13 @@ A fan made music website for Stray Kids
   <title>Stray Kids</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    * {
+     {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-  body {
+     }
+    body
+     {
       background-color: #0c0c0c;
       font-family: 'RocknRoll One', sans-serif;
       color: white;
@@ -23,7 +23,7 @@ A fan made music website for Stray Kids
       min-height: 100vh;
     }
 
-   .container {
+  container {
       display: flex;
       width: 90%;
       max-width: 1200px;
