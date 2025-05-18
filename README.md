@@ -40,7 +40,7 @@ A fan made music website for Stray Kids
   </main>
 
   <footer>
-    <p>&copy; 2025 Stray Kids Fan Page. Made by your Minho.</p>
+    <p>&copy; 2025 Stray Kids Fan Page. Made by your Jarin.</p>
   </footer>
 </body>
 </html>
