@@ -15,7 +15,7 @@ A fan made music website for Stray Kids
 
     body {
       background-color: #0c0c0c;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'RocknRoll One', sans-serif;
       color: white;
       display: flex;
       justify-content: center;
@@ -131,11 +131,11 @@ A fan made music website for Stray Kids
       <h1>Stray Kids</h1>
       <h2>Albums</h2>
       <ul>
-        <li>★★★★★ (5-Star)</li>
-        <li>MAXIDENT</li>
-        <li>ODDINARY</li>
+        <li>Truman</li>
+        <li>HEYDAY(Prod.Czaer)</li>
+        <li>Falling Up</li>
         <li>NOEASY</li>
-        <li>IN LIFE</li>
+        <li>U(Feat. TABLO)</li>
         <li>GO生 (GO LIVE)</li>
       </ul>
     </div>
