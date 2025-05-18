@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stray Kids Music</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .header h1 {
+      font-size: 3rem;
+      color: #ff3cac;
+    }
+    .player {
+      background: #1a1a1a;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 60, 172, 0.5);
+      width: 90%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .album-art {
+      width: 100%;
+      border-radius: 10px;
+    }
+    audio {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .song-title {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Stray Kids Music World</h1>
-    <p>Stray Kids everywhere all around the world!</p>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Discography</a></li>
-      <li><a href="#">Members</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>Latest Comeback</h2>
-      <p>Discover the newest Stray Kids track and MV!</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 STAY Zone</p>
-  </footer>
+  <div class="header">
+    <h1>Stray Kids Vibes</h1>
+    <p>DJ Princess Jarin's Favorites</p>
+  </div>
+
+  <div class="player">
+    <img src="red-lights.jpg" alt="Red Lights Album Art" class="album-art" />
+    <div class="song-title">Red Lights - Bang Chan & Hyunjin</div>
+    <audio controls>
+      <source src="red-lights.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="player">
+    <img src="volcano-han.jpg" alt="Volcano Album Art" class="album-art" />
+    <div class="song-title">Volcano - Han</div>
+    <audio controls>
+      <source src="volcano-han.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div class="player">
+    <img src="drive.jpg" alt="Drive Album Art" class="album-art" />
+    <div class="song-title">Drive - Lee Know & Chan</div>
+    <audio controls>
+      <source src="drive.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
 </body>
 </html>
