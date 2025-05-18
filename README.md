@@ -5,121 +5,162 @@ A fan made music website for Stray Kids
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stray Kids</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #0d0d0d;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0c0c0c;
+      font-family: 'Roboto', sans-serif;
       color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
-    header {
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
       background-color: #111;
-      padding: 40px 20px;
-      text-align: center;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 0, 80, 0.2);
     }
-    header h1 {
+
+    .left {
+      flex: 1;
+      padding: 40px;
+      background: #0d0d0d;
+    }
+
+    .left h1 {
       font-size: 3em;
-      margin: 0;
+      font-family: 'Orbitron', sans-serif;
       color: #e60026;
     }
-    header p {
-      font-size: 1.2em;
-      color: #ccc;
-      margin-top: 10px;
-    }
-    nav {
-      background-color: #1a1a1a;
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav a {
+
+    .left h2 {
+      margin-top: 30px;
+      font-size: 1.3em;
       color: #fff;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
     }
-    nav a:hover {
-      color: #e60026;
+
+    .left ul {
+      margin-top: 15px;
+      list-style: none;
     }
-    section {
-      padding: 40px 20px;
-      border-bottom: 1px solid #222;
-    }
-    section h2 {
-      color: #e60026;
-    }
-    .content-box {
-      margin-top: 20px;
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .upload-note {
-      font-size: 0.9em;
+
+    .left ul li {
+      margin-bottom: 10px;
+      font-size: 1em;
       color: #aaa;
-      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.2s;
     }
-    footer {
-      background: #111;
+
+    .left ul li:hover {
+      color: #fff;
+    }
+
+    .right {
+      flex: 2;
+      position: relative;
+      background: linear-gradient(to top, #0c0c0c, #141414);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .image-box {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
+    }
+
+    .image-box img {
+      max-width: 300px;
+      border-radius: 20px;
+      filter: drop-shadow(0 0 15px #e60026);
+    }
+
+    .player {
+      margin-top: 30px;
+    }
+
+    .player h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .tracklist {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 0.95em;
+    }
+
+    .tracklist li {
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      margin-top: 30px;
+      color: #aaa;
+      font-size: 0.95em;
+      line-height: 1.5em;
+    }
+
+    .play-button {
+      display: inline-block;
+      background-color: #e60026;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Stray Kids</h1>
-    <p>A fan made music website for Stray Kids</p>
-  </header>
-
-  <nav>
-    <a href="#music">Music</a>
-    <a href="#fan-edits">Fan Edits</a>
-    <a href="#photos">Photos</a>
-    <a href="#memes">Memes</a>
-  </nav>
-
-  <section id="music">
-    <h2>Music</h2>
-    <div class="content-box">
-      <!-- Embed music players or links here -->
-      <p>Stream your favorite SKZ songs here!</p>
-      <p class="upload-note">Want to upload music? Please request permission.</p>
+  <div class="container">
+    <div class="left">
+      <h1>Stray Kids</h1>
+      <h2>Albums</h2>
+      <ul>
+        <li>★★★★★ (5-Star)</li>
+        <li>MAXIDENT</li>
+        <li>ODDINARY</li>
+        <li>NOEASY</li>
+        <li>IN LIFE</li>
+        <li>GO生 (GO LIVE)</li>
+      </ul>
     </div>
-  </section>
 
-  <section id="fan-edits">
-    <h2>Fan Edits</h2>
-    <div class="content-box">
-      <!-- Embed fan edits (videos) -->
-      <p>Explore amazing fan-made edits!</p>
-      <p class="upload-note">To upload your edit, please contact the admin for access.</p>
+    <div class="right">
+      <div class="image-box">
+        <img src="https://i.pinimg.com/736x/52/e8/79/52e879f9d61c3e4c2d3e1858e7c54a2d.jpg" alt="Stray Kids Album Cover">
+      </div>
+
+      <div class="player">
+        <h3><span class="play-button">▶</span> *Out of Control* — Now Playing</h3>
+        <ul class="tracklist">
+          <li>Case 143 — 3:12</li>
+          <li>Venom — 2:58</li>
+          <li>Thunderous — 3:27</li>
+          <li>Maniac — 3:14</li>
+        </ul>
+      </div>
+
+      <div class="desc">
+        This fan-made page celebrates Stray Kids and their musical journey.  
+        It is a personal project to archive fan-favorite tracks, edits, memes, and visuals.  
+        Want to contribute your own content? Ask the admin for permission!
+      </div>
     </div>
-  </section>
-
-  <section id="photos">
-    <h2>Photos</h2>
-    <div class="content-box">
-      <!-- Add fan-uploaded or SKZ photos -->
-      <p>Browse our fan gallery.</p>
-      <p class="upload-note">Uploading feature is locked. Permission needed.</p>
-    </div>
-  </section>
-
-  <section id="memes">
-    <h2>Memes</h2>
-    <div class="content-box">
-      <!-- Add funny memes here -->
-      <p>Laugh with our fan-made SKZ memes!</p>
-      <p class="upload-note">Submit memes after permission approval.</p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Stray Kids Fan Project. All content belongs to respective owners.
-  </footer>
+  </div>
 </body>
 </html>
