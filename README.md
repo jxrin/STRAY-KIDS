@@ -30,7 +30,7 @@ A fan made music website for Stray Kids
     </section>
     <section>
       <h2>Our Boys</h2>
-      <img src="img/straykids-ot8.jpg" alt="Stray Kids OT8" width="300">
+      <img src="img/straykids-ot8.jpg.jpg" alt="Stray Kids OT8" width="300">
       <p>Stray Kids are not just a group, they’re a revolution. From “God’s Menu” to “S-Class,” they’ve redefined K-Pop with raw energy, deep lyrics, and insane talent. Get to know them, stan them, love them.</p>
     </section>
   </main>
