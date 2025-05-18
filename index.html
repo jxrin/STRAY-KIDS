@@ -2,83 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stray Kids Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stray Kids</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
       background-color: #0d0d0d;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
-    .header {
+    header {
+      background-color: #111;
+      padding: 40px 20px;
       text-align: center;
-      padding: 2rem 0;
     }
-    .header h1 {
-      font-size: 3rem;
-      color: #ff3cac;
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #e60026;
     }
-    .player {
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #1a1a1a;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e60026;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #222;
+    }
+    section h2 {
+      color: #e60026;
+    }
+    .content-box {
+      margin-top: 20px;
       background: #1a1a1a;
-      padding: 1rem;
-      margin: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 60, 172, 0.5);
-      width: 90%;
-      max-width: 600px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .album-art {
-      width: 100%;
+      padding: 20px;
       border-radius: 10px;
     }
-    audio {
-      margin-top: 1rem;
-      width: 100%;
+    .upload-note {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 10px;
     }
-    .song-title {
-      margin-top: 0.5rem;
-      font-weight: bold;
-      font-size: 1.2rem;
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Stray Kids Vibes</h1>
-    <p>DJ Princess Jarin's Favorites</p>
-  </div>
+  <header>
+    <h1>Stray Kids</h1>
+    <p>A fan made music website for Stray Kids</p>
+  </header>
 
-  <div class="player">
-    <img src="red-lights.jpg" alt="Red Lights Album Art" class="album-art" />
-    <div class="song-title">Red Lights - Bang Chan & Hyunjin</div>
-    <audio controls>
-      <source src="red-lights.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+  <nav>
+    <a href="#music">Music</a>
+    <a href="#fan-edits">Fan Edits</a>
+    <a href="#photos">Photos</a>
+    <a href="#memes">Memes</a>
+  </nav>
 
-  <div class="player">
-    <img src="volcano-han.jpg" alt="Volcano Album Art" class="album-art" />
-    <div class="song-title">Volcano - Han</div>
-    <audio controls>
-      <source src="volcano-han.mp3" type="audio/mpeg" />
-    </audio>
-  </div>
+  <section id="music">
+    <h2>Music</h2>
+    <div class="content-box">
+      <!-- Embed music players or links here -->
+      <p>Stream your favorite SKZ songs here!</p>
+      <p class="upload-note">Want to upload music? Please request permission.</p>
+    </div>
+  </section>
 
-  <div class="player">
-    <img src="drive.jpg" alt="Drive Album Art" class="album-art" />
-    <div class="song-title">Drive - Lee Know & Chan</div>
-    <audio controls>
-      <source src="drive.mp3" type="audio/mpeg" />
-    </audio>
-  </div>
+  <section id="fan-edits">
+    <h2>Fan Edits</h2>
+    <div class="content-box">
+      <!-- Embed fan edits (videos) -->
+      <p>Explore amazing fan-made edits!</p>
+      <p class="upload-note">To upload your edit, please contact the admin for access.</p>
+    </div>
+  </section>
 
+  <section id="photos">
+    <h2>Photos</h2>
+    <div class="content-box">
+      <!-- Add fan-uploaded or SKZ photos -->
+      <p>Browse our fan gallery.</p>
+      <p class="upload-note">Uploading feature is locked. Permission needed.</p>
+    </div>
+  </section>
+
+  <section id="memes">
+    <h2>Memes</h2>
+    <div class="content-box">
+      <!-- Add funny memes here -->
+      <p>Laugh with our fan-made SKZ memes!</p>
+      <p class="upload-note">Submit memes after permission approval.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Stray Kids Fan Project. All content belongs to respective owners.
+  </footer>
 </body>
 </html>
